@@ -1,0 +1,67 @@
+{
+  "source_sha256": "f4ce5bfbf2d27a333754033c03b4d3b5b56f6a2b9cb9610066209fc613bbca09",
+  "currency": "EGP",
+  "dataset": "Synthetic demo, not a real business",
+  "input_rows": 2405,
+  "accepted_rows": 2400,
+  "rejected_rows": 5,
+  "rejection_reasons": {
+    "duplicate_order_id": 1,
+    "invalid_quantity": 1,
+    "invalid_price": 1,
+    "invalid_date": 1,
+    "unknown_region": 1
+  },
+  "monthly": [
+    {
+      "month": "2026-01",
+      "revenue": 218207.1,
+      "previous_revenue": null
+    },
+    {
+      "month": "2026-02",
+      "revenue": 208123.37,
+      "previous_revenue": 218207.1
+    },
+    {
+      "month": "2026-03",
+      "revenue": 222633.31,
+      "previous_revenue": 208123.37
+    },
+    {
+      "month": "2026-04",
+      "revenue": 198283.09,
+      "previous_revenue": 222633.31
+    },
+    {
+      "month": "2026-05",
+      "revenue": 241750.59,
+      "previous_revenue": 198283.09
+    },
+    {
+      "month": "2026-06",
+      "revenue": 302830.21,
+      "previous_revenue": 241750.59
+    },
+    {
+      "month": "2026-07",
+      "revenue": 287020.91,
+      "previous_revenue": 302830.21
+    },
+    {
+      "month": "2026-08",
+      "revenue": 253746.43,
+      "previous_revenue": 287020.91
+    },
+    {
+      "month": "2026-09",
+      "revenue": 230223.87,
+      "previous_revenue": 253746.43
+    },
+    {
+      "month": "2026-10",
+      "revenue": 200265.51,
+      "previous_revenue": 230223.87
+    }
+  ]
+}
