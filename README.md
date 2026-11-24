@@ -4,8 +4,6 @@ A reproducible retail order pipeline that rejects bad records before reporting b
 
 **AI-assisted portfolio project, November 2026. Synthetic data, not a client engagement or employment record.** The implementation was generated and tested with AI assistance. A candidate should understand and be able to modify it before presenting it as evidence of their own skills.
 
-![Dashboard](docs/screenshot.png)
-
 ## Run in five commands
 
 ```sh
@@ -16,7 +14,7 @@ order-ops --generate
 python -m http.server 8000 --directory site
 ```
 
-Open http://localhost:8000. Test with `python -m pytest -q`. Python 3.10 or newer. For your own input use `order-ops --source your.csv` without `--generate`. The CSV must match the exact field order in `data/orders.csv`. Every input is a complete snapshot, not an incremental feed.
+Open http://localhost:8000. Test with `python -m pytest -q`. Python 3.10 or newer. For your own input use `order-ops --source your.csv` without `--generate`. The CSV must match the field order in the sample generated at `data/orders.csv`. Every input is a complete snapshot, not an incremental feed.
 
 Docker alternative: `docker build -t order-ops .` then `docker run --rm -p 8000:8000 order-ops`. Dockerfile supplied, but Docker runtime was not available for build validation in this environment.
 
@@ -56,8 +54,8 @@ Prices are integer piastres in storage. Discount multiplication uses Decimal and
 
 - `src/order_ops/pipeline.py`: generator, validation, transaction and exports.
 - `tests/test_pipeline.py`: isolated temporary-database tests.
-- `data/orders.csv`: reproducible synthetic input.
-- `site/`: static dashboard and generated data/quality artifacts.
+- `data/orders.csv`: synthetic input generated locally by `order-ops --generate`.
+- `site/`: static dashboard. Run `order-ops --generate` to create its data artifacts before opening it.
 - `sql/business_questions.sql`: analyst-facing questions and SQL.
 - `docs/WALKTHROUGH.ar.md`: Arabic study guide and honest interview talking points.
 
