@@ -1,0 +1,77 @@
+[
+  {
+    "line": 2402,
+    "reason": "duplicate_order_id",
+    "row": {
+      "order_id": "ORD-00001",
+      "ordered_at": "2026-02-27",
+      "customer_id": "C-0013",
+      "region": "Fayoum",
+      "category": "Clothing",
+      "quantity": "2",
+      "unit_price": "192.89",
+      "discount_pct": "0",
+      "status": "delivered"
+    }
+  },
+  {
+    "line": 2403,
+    "reason": "invalid_quantity",
+    "row": {
+      "order_id": "ORD-00002",
+      "ordered_at": "2026-10-07",
+      "customer_id": "C-0045",
+      "region": "Giza",
+      "category": "Books",
+      "quantity": "-2",
+      "unit_price": "132.80",
+      "discount_pct": "0",
+      "status": "delivered"
+    }
+  },
+  {
+    "line": 2404,
+    "reason": "invalid_price",
+    "row": {
+      "order_id": "BAD-1",
+      "ordered_at": "2026-01-14",
+      "customer_id": "C-0288",
+      "region": "Cairo",
+      "category": "Home",
+      "quantity": "2",
+      "unit_price": "NaN",
+      "discount_pct": "15",
+      "status": "delivered"
+    }
+  },
+  {
+    "line": 2405,
+    "reason": "invalid_date",
+    "row": {
+      "order_id": "BAD-2",
+      "ordered_at": "2026-02-30",
+      "customer_id": "C-0389",
+      "region": "Cairo",
+      "category": "Home",
+      "quantity": "3",
+      "unit_price": "374.21",
+      "discount_pct": "0",
+      "status": "delivered"
+    }
+  },
+  {
+    "line": 2406,
+    "reason": "unknown_region",
+    "row": {
+      "order_id": "BAD-3",
+      "ordered_at": "2026-06-22",
+      "customer_id": "C-0053",
+      "region": "Unknown",
+      "category": "Home",
+      "quantity": "1",
+      "unit_price": "480.52",
+      "discount_pct": "5",
+      "status": "delivered"
+    }
+  }
+]
